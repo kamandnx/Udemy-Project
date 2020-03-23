@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#bff9ff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'lato', sans-serif ;
+}
+
+.movie-container{
+    margin: 20px;
+}
+
+.movie-container select {
+     background-color: white;
+     border: 0;
+     border-radius: 10px;
+     font-size: 14px;
+     margin-left: 10px;
+
+}
+
+.container  {
+    perspective: 10000px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #0594a3;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-radius: 10px ;
+ }
+
+.seat.occupied {
+      background-color:black ;
+  }
+
+.seat.selected{
+    background-color: burlywood;
+}  
+
+.row{
+     display: flex;
+ }
+
+.seat:nth-of-type(2){
+    margin-right: 10px;
+}
+
+.seat:nth-of-type(7){
+    margin-left: 10px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase{
+    background-color: #7ebecc;
+    padding: 5 px 10px;
+    border-radius: 5px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-betwee n;
+        
+}
+
+.showcase li{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 10px ;
+}
+
+.showcase li small{
+    margin-left: 2px;
+}
+
+.screen{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    margin:15px 0;
+    box-shadow: 0 3px 10px rgba(255,2555,255,0.7) ;
+}
+
+p.text span{
+    color: #9538ff;
+}
